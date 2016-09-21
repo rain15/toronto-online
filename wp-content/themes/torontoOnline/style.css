@@ -1,0 +1,610 @@
+/*
+Theme Name: Toronto Online
+Author: Hema Pillay
+Designed By: Juan Pablo de la Torre
+Author URI: http://hemapillay.com/
+Description: A post modern, simple, responsive portfolio theme designed in WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, html5, css3, city, blog
+ 
+*/
+
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Open Sans", sans-serif;
+  font-size: 140%;
+  line-height: 1.5;
+  color: #000; /* #444444; */
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width:95%;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+/** Resets UL **/
+ul {
+  padding: 0;
+  margin:0;
+  list-style:none;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color:#a00622;
+}
+/** End of resets **/
+
+
+/** Header **/
+header {
+  background-color: #a00622;
+  overflow:auto;
+  padding: 2% 0;
+}
+header .logo img{
+  margin:0 auto;
+  display: block;
+}
+
+header nav a {
+  color: #fff;
+}
+header nav {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+}
+header nav ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+header nav ul li.current-menu-item {
+  border-bottom: 2px solid #fff;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 80px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 5px 0;
+}
+h1{
+  font-size: 26px;
+  font-size: 2.6rem;
+  color: #a00622;
+  text-align: center;
+}
+h2{
+  font-size: 20px;
+  font-size: 2rem;
+  color: #a00622;
+  text-align: center;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size:18px;
+  font-size:1.8rem;
+  color: #a00622;
+}
+p {
+  color: #000000;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.content {
+  margin-top: 20px!important;
+}
+
+/** SIDEBAR */
+#testimonials h3 {
+    color: #a00622;
+    font-size: 20px;
+    font-size: 2rem;
+}
+#testimonials .textwidget {
+    color: #767676;
+    background-image: url(img/svg_quote.svg);
+    background-repeat: no-repeat;
+    background-position: left top ;
+    padding-left: 86px;
+    font-style: italic;
+}
+
+#testimonials .textwidget p {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 34px;
+}
+#testimonials .textwidget span {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/**  Featured Image **/
+.featured {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.featured h2 {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: #a00622;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: lowercase;
+}
+
+
+
+h2.noimage {
+  color: #a00622;
+  font-size: 30px;
+  font-size: 3rem;
+  text-align: center;
+  padding: 30px 0;
+  border: 2px solid #a00622;
+}
+/** FOOTER **/
+footer {
+  clear: both;
+}
+footer nav {
+  display: none;
+}
+
+footer hr {
+  border: 2px solid #a00622;
+}
+
+footer p {
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+/** What to Visit **/
+ul.blog-visit li {
+  width: 100%;
+  padding: 5px;
+}
+
+.blog-visit-featured {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.blog-visit-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+}
+
+.blog-visit-category a {
+  text-decoration: none;
+  background-color: #a00622;
+  padding: 5px;
+  color: #fff;
+  text-transform: lowercase;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.blog-visit li .content {
+  padding: 10px 20px;
+  margin-top: 0!important;
+    
+}
+.blog-visit li .content h2 {
+  margin: 0;
+  text-align: left;
+  
+}
+
+.blog-visit li .content p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+.blog-visit li .post-information {
+  background-color: #ebebeb;
+  padding: 5px 20px;
+  overflow: auto;
+  
+}
+
+.blog-visit li .post-information p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #000;
+  
+}
+
+.post-information .author {
+  float: left;
+  width: 40%;
+}
+
+.post-information .author span {
+  color: #a00622;
+  font-weight: bold;
+}
+
+.blog-visit li .post-information .date {
+  float: right;
+  width: 40%;
+  text-align: right;
+  font-weight: bold;
+}
+
+/** SINGLE POST **/
+.single .written-info {
+  background-color: #ebebeb;
+  padding: 5px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.single .written-info .column {
+  float: left;
+  margin-right: 20px;
+}
+
+.single .written-info a {
+  font-weight: bold;
+}
+
+.single textarea {
+  width: 100%;
+}
+
+/** CATEGORY **/
+.blog article,
+.category article {
+  clear: both;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.blog article img,
+.category article img {
+  width: 100%;
+}
+
+.blog article .content-post,
+.category article .content-post {
+  width: 100%;
+}
+.category h2 {
+  margin: 0;
+}
+
+.blog h2 {
+  margin: 0;
+}
+.blog .post-categories {
+  margin-top: 10px;
+}
+.blog .post-categories li a {
+  color: #fff;
+  background-color: #a00622;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+  .category-wrapper {
+    width: 100%;
+  }
+
+  .post-info-wrapper {
+    display: none;
+  }
+
+/** CONTACT US FORM **/
+.page-id-14 .primary {
+  margin-bottom: 40px;
+}
+.page-id-14 h3 {
+  text-align: center;
+  font-size: 20px;
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+}
+.wpcf7 {
+  background-color: #f2f2f2;
+  padding: 40px!important;
+  width: 100%;
+  margin: 0 auto!important;
+  display: block;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0,0,0,.3);
+  box-shadow: 0px 20px 20px 0 rgba(0,0,0,.3);
+  margin-bottom: 50px;
+
+ }
+ 
+ .wpcf7 p {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a00622;
+  margin-bottom: 15px;
+  
+ }
+ .wpcf7 span {
+   display: block;
+   clear: both;
+ }
+ .wpcf7 input,
+ .wpcf7 textarea {
+  height: 32px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 100%;
+ } 
+ .wpcf7 textarea {
+   height: 200px;
+ }
+ .wpcf7 input[type="submit"] {
+   background-color: #a00622;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 24px;
+   font-size: 2.4rem;
+   border-radius: 10px;
+   width: auto;
+   padding: 0 50px;
+   cursor: pointer;
+   color: #fff;
+ }
+
+/** FRONT PAGE **/
+
+/** Widget Zone **/
+.what-to-visit .widget-title {
+  display: none;
+}
+
+.what-to-visit .widget_sp_image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.what-to-visit .widget_sp_image  img {
+  margin: 0 auto;
+  display: block;
+}
+.what-to-visit .widget_sp_image .widget_sp_image-description {
+  padding: 0 40px;
+}
+.what-to-visit .widget_sp_image p {
+  text-align: center;
+  background-color: #a00622;
+  border-radius: 20px;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* About Us section on Front Page */
+.bottom-front-page .about-us {
+  width: 100%;
+  padding-right: 20px;
+}
+/** Latest 2 blog entries on front page **/
+.bottom-front-page {
+  clear: both;
+}
+
+.bottom-front-page h2 {
+  text-align: left;
+  text-transform: lowercase;  
+}
+
+.bottom-front-page li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bottom-front-page li h3 {
+  margin: 10px 0;
+}
+.bottom-front-page li a.read-more,
+a.more-link {
+    font-weight: bold;
+    display: block;
+    text-align: right; 
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+
+/** MEDIA QUERIES */
+@media only screen and (min-width : 480px) {
+  .blog article img,
+  .category article img {
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+  }
+
+  .blog article .content-post,
+  .category article .content-post {
+    float: left;
+    width: 60%;
+    padding-left: 20px;
+  }
+  ul.blog-visit li {
+    float: left;
+    width: 50%;
+  }
+
+  /** Contact Us Form **/
+  .wpcf7 {
+    width: 60%;
+  }
+
+  /** FRONT PAGE **/
+  .bottom-front-page .about-us {
+    float: left;
+    width: 30%;
+    padding: 0 20px;
+  }
+  /** LATEST 2 ENTRIES **/
+  .bottom-front-page .blog-tips {
+    float: right;
+    width: 70%;
+  }
+  .bottom-front-page li {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  
+}
+
+@media only screen and (min-width : 768px) {
+  header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  ul.blog-visit li {
+    width: 33.3%;
+  }
+  /** Main Content **/
+  .primary {
+     float: left;
+     width: 70%;
+     padding-right: 20px;
+  }
+
+  .post-8 {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .no-sidebar {
+    width: 100%; 
+  }
+
+  .secondary {
+    float: right;
+    width: 30%;
+    margin: 0;
+    clear: none;
+    
+  }
+  #testimonials {
+    padding-top: 45px;
+  }
+
+  /* Widget zone on front page */
+  .what-to-visit .widget_sp_image {
+    float: left;
+    width: 33.3%;
+  }
+
+}
+
+@media only screen and (min-width : 992px) {
+  /** Header Navigation **/
+  header .logo {
+    width: 40%;
+    float: left;
+  }
+
+  header nav {
+    float: left;
+    width: 60%;
+  }
+
+  header nav ul {
+    float: right;
+  }
+
+  /** Footer Navigation **/
+  footer nav {
+    display: block;
+    margin-top: 30px;
+  }
+  footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  footer nav ul li a {
+    color: #a00622;
+    font-size: 16px;
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+  .container {
+    width:990px;
+    margin: 0 auto;
+  }
+  /** Header **/
+  header .logo  {
+    float:left;
+  }
+
+  /** Blog list **/
+  .category-wrapper {
+    width: 40%;
+    float: left;
+  }
+
+  .post-info-wrapper .date {
+      font-size: 12px;
+      font-size: 1.2rem;
+  }
+
+  .post-info-wrapper {
+    display: block;
+    width: 60%;
+    float: left;
+    overflow: auto;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width : 1200px)  {
+  .container {
+    width:1100px;
+    margin: 0 auto;
+  }
+}

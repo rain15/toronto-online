@@ -1,0 +1,48 @@
+/**
+ * Event Importer for Meetup and The Events Calendar
+ *
+ *
+ * Copyright (c) 2016 dabernathy89
+ * Licensed under the GPLv2+ license.
+ */
+
+.tec-meetup-settings-form-wrap form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.tec-meetup-settings-form-wrap form .setting {
+    margin-bottom: 15px;
+}
+
+.tec-meetup-settings-form-wrap form .setting:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tec-meetup-settings-form-wrap form .setting .label-wrap {
+    display: block;
+    padding-right: 10px;
+    width: 200px;
+    float: left;
+}
+
+.tec-meetup-settings-form-wrap form .setting label {
+    display: block;
+    font-weight: bold;
+}
+
+.tec-meetup-settings-form-wrap form .setting small {
+    display: block;
+    word-break: break-all;
+}
+
+.tec-meetup-settings-form-wrap form .setting input {
+    display: block;
+    float: left;
+}
